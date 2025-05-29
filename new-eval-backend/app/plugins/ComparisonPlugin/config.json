@@ -1,0 +1,57 @@
+{
+    "schema": 1,
+    "type": "skill",
+    "description": "LLM evaluation functions: metrics and qualitative judgment",
+    "functions": [
+        {
+            "name": "analyze_metrics",
+            "description": "Compute BLEU, ROUGE, BERTScore, cosine similarity",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "prompt": {
+                        "type": "string"
+                    },
+                    "response": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "prompt",
+                    "response"
+                ]
+            },
+            "returns": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "compare_responses",
+            "description": "Qualitative judgment using GPT-4",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "responses": {
+                        "type": "string",
+                        "description": "JSON list of {model_id, text}"
+                    },
+                    "query": {
+                        "type": "string"
+                    },
+                    "criteria": {
+                        "type": "string",
+                        "description": "Comma-separated evaluation dimensions",
+                        "default": "personalization,fluency,relevance,coherence,creativity"
+                    }
+                },
+                "required": [
+                    "responses",
+                    "query"
+                ]
+            },
+            "returns": {
+                "type": "string"
+            }
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "schema": 1,
+    "type": "skill",
+    "description": "Document search plugin using semantic (vector) and hybrid (vector + keyword) search over Azure AI Search",
+    "functions": [
+      {
+        "name": "semantic_search",
+        "description": "Search document chunks using only semantic (vector) similarity",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "The user query to embed and search"
+            },
+            "top_k": {
+              "type": "integer",
+              "description": "Number of top results to return",
+              "default": 5
+            },
+            "min_relevance": {
+              "type": "number",
+              "description": "Minimum relevance score (0–1)",
+              "default": 0.7
+            },
+            "filter": {
+              "type": "string",
+              "description": "Optional OData filter expression"
+            }
+          },
+          "required": ["query"]
+        },
+        "returns": {
+          "type": "string",
+          "description": "JSON array of document chunks with score and metadata"
+        }
+      },
+      {
+        "name": "hybrid_search",
+        "description": "Perform hybrid search combining vector and keyword relevance",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "Search query to use"
+            },
+            "top_k": {
+              "type": "integer",
+              "description": "Number of results to return",
+              "default": 5
+            },
+            "semantic_weight": {
+              "type": "number",
+              "description": "Weight for vector similarity (0–1)",
+              "default": 0.8
+            },
+            "filter": {
+              "type": "string",
+              "description": "Optional filter expression for document scope"
+            }
+          },
+          "required": ["query"]
+        },
+        "returns": {
+          "type": "string",
+          "description": "List of ranked document chunks with merged scores"
+        }
+      }
+    ]
+  }

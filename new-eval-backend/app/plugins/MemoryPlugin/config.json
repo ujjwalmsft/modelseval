@@ -1,0 +1,74 @@
+{
+    "schema": 1,
+    "type": "memory",
+    "description": "Semantic memory plugin: stores, retrieves, and searches model memory in Cosmos DB + vector store",
+    "functions": [
+      {
+        "name": "save_conversation",
+        "description": "Save a conversation message to memory and vector store",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "model_id": { "type": "string" },
+            "conversation_id": { "type": "string" },
+            "role": { "type": "string" },
+            "content": { "type": "string" },
+            "timestamp": { "type": "string" },
+            "token_count": { "type": "string" }
+          },
+          "required": ["model_id", "conversation_id", "role", "content"]
+        }
+      },
+      {
+        "name": "get_memory_content",
+        "description": "Retrieve all memory items from a collection",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "model_id": { "type": "string" },
+            "collection_name": { "type": "string" }
+          },
+          "required": ["model_id", "collection_name"]
+        }
+      },
+      {
+        "name": "search_memory",
+        "description": "Search memory using vector similarity",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "model_id": { "type": "string" },
+            "query": { "type": "string" },
+            "limit": { "type": "string" }
+          },
+          "required": ["model_id", "query"]
+        }
+      },
+      {
+        "name": "list_collections",
+        "description": "List available memory collections for a model",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "model_id": { "type": "string" }
+          },
+          "required": ["model_id"]
+        }
+      },
+      {
+        "name": "retrieve_context",
+        "description": "Retrieve relevant memory for a thread using semantic search",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "model_id": { "type": "string" },
+            "thread_id": { "type": "string" },
+            "query": { "type": "string" },
+            "limit": { "type": "string" },
+            "min_relevance": { "type": "string" }
+          },
+          "required": ["model_id", "thread_id", "query"]
+        }
+      }
+    ]
+  }

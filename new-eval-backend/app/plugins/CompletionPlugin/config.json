@@ -1,0 +1,44 @@
+{
+    "schema": 1,
+    "type": "completion",
+    "description": "Provides LLM completion functions for multiple models",
+    "completion": {
+      "temperature": 0.7,
+      "max_tokens": 2000
+    },
+    "functions": [
+      {
+        "name": "run_completion",
+        "description": "Generate a non-streaming completion from a specific model",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "prompt": { "type": "string", "description": "User input prompt" },
+            "model_id": { "type": "string", "description": "Model ID (e.g., gpt4)" },
+            "deployment": { "type": "string", "description": "Model deployment name" },
+            "system_prompt": { "type": "string", "description": "Optional system-level prompt" },
+            "conversation_id": { "type": "string", "description": "Thread or context ID" },
+            "temperature": { "type": "number", "description": "Sampling temperature (0–1)" },
+            "max_tokens": { "type": "integer", "description": "Maximum output tokens" }
+          },
+          "required": ["prompt", "model_id", "deployment"]
+        }
+      },
+      {
+        "name": "stream_completion",
+        "description": "Prepare for a streamed completion from a supported model",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "prompt": { "type": "string", "description": "User input prompt" },
+            "model_id": { "type": "string", "description": "Model ID (e.g., gpt4)" },
+            "deployment": { "type": "string", "description": "Model deployment name" },
+            "system_prompt": { "type": "string", "description": "Optional system-level prompt" },
+            "temperature": { "type": "number", "description": "Sampling temperature (0–1)" },
+            "max_tokens": { "type": "integer", "description": "Maximum output tokens" }
+          },
+          "required": ["prompt", "model_id", "deployment"]
+        }
+      }
+    ]
+  }

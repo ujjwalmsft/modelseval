@@ -1,0 +1,23 @@
+{
+  "gpt4": {
+    "personalization": 7,
+    "relevance": 9,
+    "fluency": 9,
+    "coherence": 9,
+    "creativity": 8,
+    "reasons": {
+      "personalization": "Includes commentary style.",
+      "relevance": "Accurately describes roles.",
+      "fluency": "Smooth structure.",
+      "coherence": "Logical flow.",
+      "creativity": "Unique aspects."
+    }
+  },
+  "phi4": {
+    "personalization": 6,
+    "relevance": 6,
+    "fluency": 8,
+    "coherence": 7,
+    "creativity": 5
+  }
+}

@@ -1,0 +1,50 @@
+# fastapi
+# uvicorn
+# pydantic
+# python-dotenv
+# semantic-kernel
+# azure-cosmos
+# azure-storage-blob
+# azure-identity
+# azure-ai-ml
+# azure-functions
+# azure-search-documents
+# azure-ai-inference
+# azure-ai-contentsafety
+# PyPDF2
+# python-multipart
+# azure-ai-formrecognizer
+
+
+# === Core Web Framework ===
+fastapi
+uvicorn[standard]
+ 
+# === Async Dependencies ===
+aiohttp
+httpx
+ 
+# === Microsoft Semantic Kernel ===
+# semantic-kernel==0.4.10.dev0
+semantic-kernel
+
+ 
+# === Azure SDKs ===
+azure-core
+azure-identity
+azure-cosmos
+azure-ai-contentsafety
+azure-messaging-webpubsubservice
+ 
+# === OpenAI / Azure OpenAI ===
+openai
+azure-ai-inference
+ 
+# === Tokenizer / Embeddings ===
+numpy
+scikit-learn
+ 
+# === Dev & Utility ===
+python-dotenv
+pydantic
+PyYAML

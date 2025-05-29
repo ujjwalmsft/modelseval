@@ -1,0 +1,73 @@
+{
+    "schema": 1,
+    "type": "skill",
+    "description": "Vector embedding capabilities for memory, semantic search, and document processing",
+    "functions": [
+      {
+        "name": "generate_embeddings",
+        "description": "Generate a single vector embedding for input text",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "description": "Text to generate embeddings for"
+            }
+          },
+          "required": ["text"]
+        },
+        "returns": {
+          "type": "string",
+          "description": "JSON array representing the embedding vector"
+        }
+      },
+      {
+        "name": "batch_generate_embeddings",
+        "description": "Generate vector embeddings for multiple text chunks in one batch",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "texts": {
+              "type": "string",
+              "description": "JSON array of text strings to embed"
+            },
+            "model": {
+              "type": "string",
+              "description": "Optional embedding model (default: text-embedding-ada-002)"
+            }
+          },
+          "required": ["texts"]
+        },
+        "returns": {
+          "type": "string",
+          "description": "JSON array of vector embeddings"
+        }
+      },
+      {
+        "name": "process_chunks",
+        "description": "Generate embeddings and attach them to document or memory chunks",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "chunks": {
+              "type": "string",
+              "description": "JSON array of chunk objects with text"
+            },
+            "batch_size": {
+              "type": "integer",
+              "description": "Number of chunks to process per batch (default: 10)"
+            },
+            "model": {
+              "type": "string",
+              "description": "Optional embedding model name"
+            }
+          },
+          "required": ["chunks"]
+        },
+        "returns": {
+          "type": "string",
+          "description": "JSON array of chunks with embeddings attached"
+        }
+      }
+    ]
+  }
