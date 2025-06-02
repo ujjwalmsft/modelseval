@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'LLM Model Comparison',
+  title: 'Model Comparison',
   description: 'Compare outputs from different LLM models',
 };
 

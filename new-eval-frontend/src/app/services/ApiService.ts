@@ -1,7 +1,7 @@
 /**
 * ApiService.ts
 *
-* Centralized API service for managing LLM model comparisons, user history retrieval,
+* Centralized API service for managing model comparisons, user history retrieval,
 * and utility methods for mapping model display names to backend model identifiers.
 *
 * Features:

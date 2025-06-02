@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = ({ mode, toggleColorMode }) => {
         <Toolbar>
           <CompareArrowsIcon sx={{ mr: 2 }} />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 600 }}>
-            LLM Models Comparison
+            Models Comparison
           </Typography>
 
           {/* Show Home button only on the compare page */}
