@@ -1,97 +1,82 @@
 
-# 📌 AI Model Evaluation Platform
+# Agentic AI-based Model Evaluation Platform
 
-The **AI Model Evaluation Platform** is an advanced, structured, and scalable system explicitly designed for architects, developers, and enterprises to perform detailed evaluations of Large and Small Language Models (LLMs/SLMs). Leveraging sophisticated technologies including **Semantic Kernel (SK Python)**, **Azure AI Services (OpenAI and AI Inference)**, **Azure Cosmos DB**, and modern frontend frameworks (**Next.js and React.js**), the platform offers comprehensive and explicit comparative analyses, b...
-
----
+The **Agentic AI-based Model Evaluation Platform** is an advanced, structured, and scalable solution designed for architects, developers, and enterprises to evaluate Large and Small Language Models (LLMs/SLMs). Leveraging technologies like Semantic Kernel (SK Python), Model Context Protocol (MCP), Azure AI Services (Azure OpenAI), Azure Cosmos DB, Azure Event Grid, and modern frontend frameworks (Next.js and React.js), this platform offers comprehensive comparative analyses of AI models.
 
 ## 🎯 Use Case Scenario
+This platform caters to developers and AI architects needing detailed comparative analyses and insights into model performance. It efficiently manages evaluation workflows by capturing, analyzing, and comparing model responses across quantitative metrics (BLEU, ROUGE, Cosine Similarity) and qualitative assessments (personalization, relevance, fluency, coherence, creativity). Results are securely stored, interactively visualized, and clearly communicated through intuitive dashboards.
 
-This evaluation platform is particularly useful for developers and AI architects in scenarios demanding precise comparative analysis and detailed insights into model performance. It explicitly captures, analyzes, and compares LLM/SLM responses across clearly defined metrics (e.g., BLEU, ROUGE, Cosine Similarity) and qualitative scores (e.g., personalization, relevance, fluency, coherence, creativity). Results are securely stored in Azure Cosmos DB, visualized interactively, and insights are explicitly co...
+## 🤖 Why Agentic AI and Multi-Agent Systems?
+This platform integrates Agentic AI with multi-agent orchestration via Semantic Kernel. Unlike traditional methods, Agentic AI dynamically adapts based on context, proactively requesting additional information if initial inputs are insufficient.
 
----
+The multi-agent architecture enhances modularity, scalability, and maintainability. Each agent specializes in specific evaluation tasks, enabling independent development, easier troubleshooting, and adaptability to changing requirements.
 
-## 🚀 Why Agentic AI and Multi-Agent Systems?
+## 🎯 Applicable Use Cases
+- Quantitative analysis of AI model responses
+- Qualitative assessments using advanced models (e.g., GPT-4o)
+- Model comparison and benchmarking tailored to enterprise scenarios
+- Structured evaluation workflows optimized for clear insights
+- Multi-agent orchestration for complex AI evaluation tasks
 
-A significant advantage of the platform lies in its explicit use of **Agentic AI** combined with multi-agent orchestration facilitated by **Semantic Kernel**. Unlike traditional static methods, Agentic AI enables dynamic and contextual adaptations. Specialized agents proactively request additional context or information when initial evaluation inputs are incomplete, ensuring comprehensive and explicit evaluation results.
+## 🔑 Key Features
+- Prebuilt workflows for quantitative and qualitative evaluations
+- Seamless integration with Azure OpenAI (GPT-4o) and Azure AI Inference
+- Real-time interactive dashboards built with Next.js and React.js
+- Scalable structured data storage using Azure Cosmos DB
+- Automated asynchronous agent processing via Azure Event Grid
+- Modular architecture with defined schemas, components, and integration patterns
+- Coherent session and conversation management through Model Context Protocol (MCP)
 
-Additionally, this multi-agent architecture significantly enhances modularity, scalability, and maintainability. Individual agents explicitly specialize in distinct evaluation tasks, enabling streamlined development, independent troubleshooting, and rapid adaptation to evolving evaluation criteria or regulatory requirements.
+## 📌 Model Context Protocol (MCP)
+The Model Context Protocol (MCP) ensures robust session and thread management, maintaining coherent conversation states and structured evaluations. MCP integrates closely with backend agents, Semantic Kernel workflows, and Cosmos DB to provide:
 
----
+- Session context management
+- Precise thread tracking and agent communication
+- Consistent state persistence across evaluation phases
 
-## 🎯 Use Cases
+## 👥 Who Should Use This?
+- AI developers and architects evaluating multiple models
+- Innovation teams creating MVPs for rigorous model evaluation
+- Business and technical stakeholders utilizing AI-driven decision-making
+- Partners and system integrators delivering customized AI evaluation solutions
 
-- Explicit quantitative analysis of AI model responses (**BLEU, ROUGE, Cosine Similarity**)
-- Explicit qualitative assessments using advanced models (**e.g., GPT-4o**)
-- Explicit model comparison and benchmarking tailored for enterprise scenarios
-- Explicit structured evaluation workflows optimized for rapid insights
-- Explicit robust multi-agent orchestration designed for AI evaluation tasks
+## 🧩 Platform Components
+### 🚦 Agent Orchestration
+- Semantic Kernel (SK v1.28.1+)
+- Model Context Protocol (MCP)
 
----
+### 💬 AI & Evaluations
+- Azure OpenAI & Azure AI Inference
+- Quantitative Metrics: BLEU, ROUGE-1, ROUGE-L, Cosine Similarity
+- Qualitative Metrics: GPT-4o evaluations (personalization, relevance, fluency, coherence, creativity)
 
-## 🔍 What It Offers
+### 🗃️ Data Storage
+- Azure Cosmos DB (structured threads, embeddings, evaluations, session metadata)
 
-- ✅ Explicitly prebuilt workflows for quantitative and qualitative evaluations
-- ✅ Seamless integration with Azure OpenAI (**GPT-4o**) and Azure AI Inference models
-- ✅ Real-time interactive dashboard powered by **Next.js and React.js**
-- ✅ Explicit scalable and structured data persistence with **Azure Cosmos DB**
-- ✅ Explicit automated asynchronous agent processing via **Azure Event Grid**
-- ✅ Explicitly modular architecture with clearly defined components and schemas
+### 🖥️ Frontend
+- Next.js & React.js (interactive visualizations and responsive dashboards)
 
----
+### 📬 Async Processing
+- Azure Event Grid
 
-## 👥 Who Should Use This
+### 🚀 Backend Framework
+- FastAPI (structured API endpoints)
 
-- AI developers and architects explicitly evaluating multiple LLM/SLM models
-- Innovation teams explicitly developing MVPs that require rigorous model assessments
-- Business and technical stakeholders explicitly within enterprises leveraging AI-driven decision-making
-- Partners and system integrators explicitly delivering customized AI evaluation solutions
-
----
-
-## 🧩 Key Components
-
-### Agent Orchestration
-- **Semantic Kernel (SK v1.28.1+)**: Explicit orchestration of model interactions and evaluation workflows.
-
-### Conversational AI and Model Evaluations
-- **Azure OpenAI & Azure AI Inference**: Explicitly managing model completions, embeddings, and evaluations.
-- **Quantitative Metrics**: BLEU, ROUGE-1, ROUGE-L, Cosine Similarity.
-- **Qualitative Metrics**: Evaluations on personalization, relevance, fluency, coherence, creativity (**via GPT-4o**).
-
-### Data Storage
-- **Azure Cosmos DB**: Explicit, structured storage of threads, embeddings, agent evaluations, and session metadata.
-
-### Frontend Technologies
-- **Next.js and React.js**: Interactive dashboards and responsive UIs for explicit visualization.
-
-### Communication and Async Processing
-- **Azure Event Grid**: Explicit scalable asynchronous agent processing and event-driven orchestration.
-
-### Backend Framework
-- **FastAPI**: Explicit structured, scalable backend API endpoints.
-
-### Monitoring and Observability
-- **Azure Monitor and Application Insights**: Explicit comprehensive diagnostics and observability.
-
----
+### 📈 Monitoring & Observability
+- Azure Monitor & Application Insights
 
 ## 🚀 Getting Started
-
-**Step 1: Clone the Repository**
+Step 1: Clone the Repository
 ```bash
 git clone <repository_url>
 ```
-
-**Step 2: Setup the Project**
-
+Step 2: Project Setup
 **Frontend:**
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-
 **Backend:**
 ```bash
 cd backend
@@ -100,47 +85,44 @@ source venv/bin/activate
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
-
-**Step 3: Configure Azure Services**
-
-Set your Azure credentials explicitly and configure environment variables in:
-```bash
+Step 3: Configure Azure Services
+Set Azure credentials and environment variables in:
+```
 backend/config/.env.dev
 ```
+Step 4: Deployment
+Deploy locally, via Docker, or using Azure App Service.
 
-**Step 4: Deploy**
-
-Deploy explicitly using local environments, Docker, or Azure App Service.
-
-**Step 5: Customize**
-
-Explicitly tailor evaluation workflows and integrations according to your enterprise-specific requirements.
-
----
+Step 5: Customization
+Adapt evaluation workflows and integrations to your specific enterprise needs.
 
 ## 🔧 Technology Stack
+| Component              | Technology                                                 |
+|------------------------|------------------------------------------------------------|
+| AI & NLP               | Azure OpenAI (GPT-4o), Azure AI Inference                  |
+| Orchestration          | Semantic Kernel (SK Python v1.28.1+), MCP                  |
+| Evaluation Metrics     | BLEU, ROUGE-1, ROUGE-L, Cosine Similarity, GPT-4o (Judge)  |
+| Data Storage           | Azure Cosmos DB                                            |
+| Frontend               | Next.js, React.js                                          |
+| Backend                | FastAPI, Python                                            |
+| Async Processing       | Azure Event Grid                                           |
+| Observability          | Azure Monitor, Application Insights                        |
 
-| Component              | Technology                                                      |
-|------------------------|-----------------------------------------------------------------|
-| **AI & NLP**           | Azure OpenAI (**GPT-4o**), Azure AI Inference                   |
-| **Orchestration**      | Semantic Kernel (**SK Python v1.28.1+**)                        |
-| **Evaluation Metrics** | BLEU, ROUGE-1, ROUGE-L, Cosine Similarity, Judge (GPT-4o)       |
-| **Data Storage**       | Azure Cosmos DB                                                 |
-| **Frontend**           | Next.js, React.js                                               |
-| **Backend**            | FastAPI, Python                                                 |
-| **Async Processing**   | Azure Event Grid                                                |
-| **Observability**      | Azure Monitor, Application Insights                             |
+## 🔭 Project Roadmap
+### Immediate:
+- Reflection Agent: Debugging and integration of semantic memory retrieval
+- Agentic Evaluations: Implementation to assess agent interactions and behaviors (Microsoft Build, May 2025)
 
----
+### Long-term:
+- Advanced Analytics Dashboard: Enhanced visual analytics for deeper insights
+- Scalability & Optimization: Optimize for performance under heavy workloads
+- Multilingual & Multi-document Support: Expand capabilities across languages and document types
 
 ## 🤝 Contributing
-
-We explicitly encourage feedback, feature requests, and contributions. Please open issues or submit pull requests explicitly to help improve and expand this solution.
-
----
+Feedback, feature requests, and contributions are highly encouraged. Please open issues or submit pull requests to support this solution.
 
 ## 📬 Contact
+For co-engineering engagements, customized workshops, or enterprise deployment assistance, please contact:
 
-For explicit co-engineering engagements, tailored workshops, or enterprise deployment assistance, please contact the **OCTO Depth Engagement Team**:
-
+**OCTO Depth Engagement Team**  
 📧 [octodet@microsoft.com](mailto:octodet@microsoft.com)
