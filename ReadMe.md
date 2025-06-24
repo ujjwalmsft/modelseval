@@ -1,5 +1,5 @@
 
-# Agentic AI-based Model Evaluation Platform
+# Agentic AI-based Model Evaluation and Router Platform
 
 The **Agentic AI-based Model Evaluation and Router Platform** is an advanced, structured, and scalable solution designed for architects, developers, and enterprises to evaluate Large and Small Language Models (LLMs/SLMs) and select the appropriate model based on recomended route. 
 Leveraging technologies like Semantic Kernel (SK Python), Model Context Protocol (MCP), Azure AI Services (Azure OpenAI), Azure Cosmos DB, Azure Event Grid, and modern frontend frameworks (Next.js and React.js), this platform offers comprehensive comparative analyses of AI models.
