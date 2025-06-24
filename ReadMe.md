@@ -15,7 +15,7 @@ The multi-agent architecture enhances modularity, scalability, and maintainabili
 - Quantitative analysis of AI model responses
 - Qualitative assessments using advanced models (e.g., GPT-4o)
 - Model comparison and benchmarking tailored to enterprise scenarios
-- Structured evaluation workflows optimized for clear insights
+- Structured evaluation workflows optimized for clear insights and model routing
 - Multi-agent orchestration for complex AI evaluation tasks
 
 ## 🔑 Key Features
